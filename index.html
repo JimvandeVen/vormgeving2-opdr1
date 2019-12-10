@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NS Verhalen</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/Nederlandse-spoorwegen-NS-logo.png" alt="Logo Nederlandse Spoorwegen">
+        <h1>NS Verhalen</h1>
+        <img id="inlogKnop" src="images/logo-MijnNS.png" alt="Logo Nederlandse Spoorwegen">
+    </header>
+
+
+
+    <main class="main">
+        <div class="yellow-section">
+            <form class="zoeken">
+                <input type="text" name="fname" placeholder="zoeken...">
+                <input type="submit" value="Zoek">
+            </form>
+
+        </div>
+
+
+        <div class="inlogPlek hidden" id="inlogPlek">
+            <input checked class="tabInloggen" type="radio" id="inloggen" name="tabs">
+            <input class="tabAanmelden" type="radio" id="aanmelden" name="tabs">
+            <div class="tabs">
+                <label class="tabsInloggen" for="inloggen">inloggen</label>
+                <label class="tabsAanmelden" for="aanmelden">aanmelden</label>
+            </div>
+            <section class="inloggen">
+                <h2 class="loginH2">Inloggen</h2>
+                <form>
+                    <label for="emailInlog">e-mail adres:</label>
+                    <input required id="emailInlog" type="email" placeholder="abc@email.com" class="formInput">
+                    <label for="passwordInlog">wachtwoord:</label>
+                    <input required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="passwordInlog" type="password" placeholder="wachtwoord" class="formInput">
+                    <input type="submit" value="inloggen" class="formButton" id="inloggenSubmit">
+                </form>
+            </section>
+            <section class="aanmelden">
+                <h2 class="loginH2">Aanmelden</h2>
+                <form>
+                    <label for="emailRegister">e-mail adres:</label>
+                    <input required id="emailRegister" type="email" placeholder="abc@email.com" class="formInput">
+                    <input required id="man" type="radio" class="geslacht" name="geslacht">
+                    <label for="man" class="geslacht">man</label>
+                    <input id="vrouw" type="radio" value="female" class="geslacht" name="geslacht">
+                    <label for="vrouw" class="geslacht">vrouw</label>
+                    <label for="passwordRegister">wachtwoord:</label>
+                    <input required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="passwordRegister" type="password" placeholder="wachtwoord" class="formInput">
+                    <label for="passwordVerify">wachtwoord verifïeren:</label>
+                    <input required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="passwordVerify" type="password" placeholder="wachtwoord" class="formInput">
+                    <input type="submit" value="aanmelden" class="formButton">
+                </form>
+            </section>
+        </div>
+        <section class="carousel scroll verhalenSection aanbevolen">
+            <h2>Aanbevolen:</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Gefrustreerd</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/gefrustreerd.html#gefrustreerdComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="gefrustreerd.html">
+                            <img src="images/compositie-gefrustreerd.jpg" alt="gefrustreerd"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje hartjeLeeg" src="images/hartje_leeg.png" alt="aantal likes">
+                            <img class="hartje stretchHartje hartjeVol hiddenDisplay" src="images/hartje_vol.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verhalend</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/verhalend.html#verhalendComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="verhalend.html"><img src="images/compositie-verhalend.jpg" alt="verhalend"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verwarde man</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/de_verwarde_man.html#verwardComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="de_verwarde_man.html"><img src="images/verwardeman-compositie.jpg" alt="verwarde man"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <li>
+                        <article>
+                            <h3>Gefrustreerd</h3>
+                            <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                            <a href="https://jimvandeven.github.io/VerhalenSiteWEB/gefrustreerd.html#gefrustreerdComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                            <a href="gefrustreerd.html">
+                                <img src="images/compositie-gefrustreerd.jpg" alt="gefrustreerd"></a>
+                            <dl class="leestijd">
+                                <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">8</dd>
+                            </dl>
+                            <dl class="likes">
+                                <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">10</dd>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Verhalend</h3>
+                            <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                            <a href="https://jimvandeven.github.io/VerhalenSiteWEB/verhalend.html#verhalendComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                            <a href="verhalend.html"><img src="images/compositie-verhalend.jpg" alt="verhalend"></a>
+                            <dl class="leestijd">
+                                <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">8</dd>
+                            </dl>
+                            <dl class="likes">
+                                <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">10</dd>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Verwarde man</h3>
+                            <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                            <a href="https://jimvandeven.github.io/VerhalenSiteWEB/de_verwarde_man.html#verwardComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                            <a href="de_verwarde_man.html"><img src="images/verwardeman-compositie.jpg" alt="verwarde man"></a>
+                            <dl class="leestijd">
+                                <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">8</dd>
+                            </dl>
+                            <dl class="likes">
+                                <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">10</dd>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Gefrustreerd</h3>
+                            <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                            <a href="https://jimvandeven.github.io/VerhalenSiteWEB/gefrustreerd.html#gefrustreerdComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                            <a href="gefrustreerd.html">
+                                <img src="images/compositie-gefrustreerd.jpg" alt="gefrustreerd"></a>
+                            <dl class="leestijd">
+                                <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">8</dd>
+                            </dl>
+                            <dl class="likes">
+                                <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">10</dd>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Verhalend</h3>
+                            <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                            <a href="https://jimvandeven.github.io/VerhalenSiteWEB/verhalend.html#verhalendComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                            <a href="verhalend.html"><img src="images/compositie-verhalend.jpg" alt="verhalend"></a>
+                            <dl class="leestijd">
+                                <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">8</dd>
+                            </dl>
+                            <dl class="likes">
+                                <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">10</dd>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Verwarde man</h3>
+                            <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                            <a href="https://jimvandeven.github.io/VerhalenSiteWEB/de_verwarde_man.html#verwardComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                            <a href="de_verwarde_man.html"><img src="images/verwardeman-compositie.jpg" alt="verwarde man"></a>
+                            <dl class="leestijd">
+                                <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">8</dd>
+                            </dl>
+                            <dl class="likes">
+                                <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                                <dd class="aantalLikes">10</dd>
+                            </dl>
+                        </article>
+                    </li>
+            </ul>
+        </section>
+        <section class="carousel scroll verhalenSection">
+            <h2>Meeste Likes:</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Gefrustreerd</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/gefrustreerd.html#gefrustreerdComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="gefrustreerd.html">
+                            <img src="images/compositie-gefrustreerd.jpg" alt="gefrustreerd"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verhalend</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/verhalend.html#verhalendComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="verhalend.html"><img src="images/compositie-verhalend.jpg" alt="verhalend"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verwarde man</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/de_verwarde_man.html#verwardComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="de_verwarde_man.html"><img src="images/verwardeman-compositie.jpg" alt="verwarde man"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Gefrustreerd</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/gefrustreerd.html#gefrustreerdComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="gefrustreerd.html">
+                            <img src="images/compositie-gefrustreerd.jpg" alt="gefrustreerd"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verhalend</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/verhalend.html#verhalendComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="verhalend.html"><img src="images/compositie-verhalend.jpg" alt="verhalend"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verwarde man</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/de_verwarde_man.html#verwardComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="de_verwarde_man.html"><img src="images/verwardeman-compositie.jpg" alt="verwarde man"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Gefrustreerd</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/gefrustreerd.html#gefrustreerdComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="gefrustreerd.html">
+                            <img src="images/compositie-gefrustreerd.jpg" alt="gefrustreerd"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verhalend</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/verhalend.html#verhalendComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="verhalend.html"><img src="images/compositie-verhalend.jpg" alt="verhalend"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verwarde man</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/de_verwarde_man.html#verwardComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="de_verwarde_man.html"><img src="images/verwardeman-compositie.jpg" alt="verwarde man"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <form>
+            <fieldset class="sorteren hiddenDisplay">
+                <h2>Sorteren
+                    <span class="sorteerLampje redLampje" id="sorteerLampje"></span>
+                </h2>
+
+                <button type="button" class="sluitSorteren hiddenDisplay">toepassen</button>
+                <input id="gelezenHL" class="sorterenEvent sorterenCheckbox" type="radio" name="sorteren">
+                <label for="gelezenHL" class="sorterenEvent sorterenCheckbox">Meest gekozen Hoog-Laag</label>
+                <input id="gelezenLH" class="sorterenEvent sorterenCheckbox" type="radio" value="female" name="sorteren">
+                <label for="gelezenLH" class="sorterenEvent sorterenCheckbox">Meest gekozen Laag-Hoog</label>
+                <input id="waarderingHL" class="sorterenEvent sorterenCheckbox" type="radio" value="other" name="sorteren">
+                <label for="waarderingHL" class="sorterenEvent sorterenCheckbox">Waardering Hoog-Laag</label>
+                <input id="waarderingLH" class="sorterenEvent sorterenCheckbox" type="radio" value="other" name="sorteren">
+                <label for="waarderingLH" class="sorterenEvent sorterenCheckbox">Waardering gekozen Laag-Hoog</label>
+                <input id="geenSorteren" class="sorterenEvent" name="sorteren" type="radio">
+                <label for="geenSorteren" class="sorterenEvent">Geen</label>
+
+            </fieldset>
+        </form>
+        <section class="alleVerhalenSection">
+            <h2>Alle verhalen</h2>
+            <button class="sorterenKnop" type="button">Sorteren</button>
+            <div class="sorteerLampje redLampje"></div>
+            <ul class="alleVerhalenList">
+                <li>
+                    <article>
+                        <h3>Gefrustreerd</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/gefrustreerd.html#gefrustreerdComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="gefrustreerd.html">
+                            <img src="images/compositie-gefrustreerd.jpg" alt="gefrustreerd"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verhalend</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/verhalend.html#verhalendComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="verhalend.html"><img src="images/compositie-verhalend.jpg" alt="verhalend"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verwarde man</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/de_verwarde_man.html#verwardComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="de_verwarde_man.html"><img src="images/verwardeman-compositie.jpg" alt="verwarde man"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Gefrustreerd</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/gefrustreerd.html#gefrustreerdComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="gefrustreerd.html">
+                            <img src="images/compositie-gefrustreerd.jpg" alt="gefrustreerd"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verhalend</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/verhalend.html#verhalendComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="verhalend.html"><img src="images/compositie-verhalend.jpg" alt="verhalend"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verwarde man</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/de_verwarde_man.html#verwardComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="de_verwarde_man.html"><img src="images/verwardeman-compositie.jpg" alt="verwarde man"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Gefrustreerd</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/gefrustreerd.html#gefrustreerdComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="gefrustreerd.html">
+                            <img src="images/compositie-gefrustreerd.jpg" alt="gefrustreerd"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verhalend</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/verhalend.html#verhalendComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="verhalend.html"><img src="images/compositie-verhalend.jpg" alt="verhalend"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Verwarde man</h3>
+                        <img class="leeslijst" src="images/bookmark_leeg.png" alt="leeslijst knop">
+                        <a href="https://jimvandeven.github.io/VerhalenSiteWEB/de_verwarde_man.html#verwardComment"><img class="comment" src="images/comments.png" alt="leeslijst knop"></a>
+                        <a href="de_verwarde_man.html"><img src="images/verwardeman-compositie.jpg" alt="verwarde man"></a>
+                        <dl class="leestijd">
+                            <dt class="hartje"> <img class="hartje" src="images/clock-png-clock-icon-1600.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">8</dd>
+                        </dl>
+                        <dl class="likes">
+                            <dt> <img class="hartje" src="images/hartje_leeg.png" alt="aantal likes"></dt>
+                            <dd class="aantalLikes">10</dd>
+                        </dl>
+                    </article>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+    <aside>
+        <img src="images/kleur_icon.png" class="hiddenDisplay" alt="kleur icoon" id="kleurIcoon">
+        <img src="images/sfeer.png" class="hiddenDisplay" alt="sfeer icoon" id="sfeerIcoon">
+        <img src="images/leestijd_icoon.png" class="hiddenDisplay" alt="leestijd icoon" id="leestijdIcoon">
+        <img src="images/taalgebruik.png" class="hiddenDisplay" alt="taalgebruik icoon" id="taalgebruikIcoon">
+        <button type="button" id="filterButton" class="filterButton">Filteren</button>
+        <form id="overlay" class="overlay hidden">
+            <h2>Filters</h2>
+            <button type="button" class="hiddenDisplay" id="closeFilter">toepassen</button>
+            <fieldset class="leestijdFieldset">
+                <label class="titelFilter">Leestijd <span class="leestijdLampje redLampje"></span></label>
+                <input id="5" name="leestijd" type="radio" class="leestijdCheckbox leestijdEvent" value="leestijd">
+                <label for="5" class="leestijdCheckbox leestijdEvent">5 min</label>
+                <input id="10" name="leestijd" type="radio" class="leestijdCheckbox leestijdEvent" value="leestijd">
+                <label for="10" class="leestijdCheckbox leestijdEvent">10 min</label>
+                <input id="15" name="leestijd" type="radio" class="leestijdCheckbox leestijdEvent" value="leestijd">
+                <label for="15" class="leestijdCheckbox leestijdEvent">15 min</label>
+                <input id="geenLeestijd" class="leestijdEvent" name="leestijd" type="radio">
+                <label for="geenLeestijd" class="leestijdEvent">geen</label>
+            </fieldset>
+            <fieldset>
+                <label class="titelFilter">Taalgebruik <span class="taalgebruikLampje redLampje"></span></label>
+                <input id="12" name="taalgebruik" class="taalgebruikCheckbox taalgebruikEvent" type="radio">
+                <label for="12" class="taalgebruikCheckbox taalgebruikEvent">12+</label>
+                <input id="16" name="taalgebruik" class="taalgebruikCheckbox taalgebruikEvent" type="radio">
+                <label for="16" class="taalgebruikCheckbox taalgebruikEvent">16+</label>
+                <input id="18" name="taalgebruik" class="taalgebruikCheckbox taalgebruikEvent" type="radio">
+                <label for="18" class="taalgebruikCheckbox taalgebruikEvent">18+</label>
+                <input id="geenTaalgebruik" name="taalgebruik" class="taalgebruikEvent" type="radio">
+                <label for="geenTaalgebruik" class="taalgebruikEvent">geen</label>
+            </fieldset>
+            <fieldset class="sfeerwoord">
+                <label class="titelFilter">Sfeerwoord <span class="sfeerwoordLampje redLampje"></span></label>
+                <div class="leelijstLampje redLampje"></div>
+                <input id="willekeur" name="checkbox" class="sfeerCheckbox sfeerFilter" type="checkbox">
+                <label for="willekeur" class="sfeerFilter">willekeur</label>
+                <input id="komisch" name="checkbox" class="sfeerCheckbox sfeerFilter" type="checkbox">
+                <label for="komisch" class="sfeerFilter">komisch</label>
+                <input id="chaotisch" name="checkbox" class="sfeerCheckbox sfeerFilter" type="checkbox">
+                <label for="chaotisch" class="sfeerFilter">chaotisch</label>
+                <input id="rustgevend" name="checkbox" class="sfeerCheckbox sfeerFilter" type="checkbox">
+                <label for="rustgevend" class="sfeerFilter">rustgevend</label>
+                <input id="geïrriteerd" name="checkbox" class="sfeerCheckbox sfeerFilter" type="checkbox">
+                <label for="geïrriteerd" class="sfeerFilter">geïrriteerd</label>
+            </fieldset>
+            <fieldset class="kleurenFilters">
+                <label id="kleurenFilters" class="titelFilter">Kleur <span class="kleurLampje redLampje"></span></label>
+                <div class="leelijstLampje redLampje"></div>
+                <input id="zwart" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
+                <label for="zwart" class="kleurFilter zwart"></label>
+                <input id="wit" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
+                <label for="wit" class="kleurFilter wit"></label>
+                <input id="rood" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
+                <label for="rood" class="kleurFilter rood"></label>
+                <input id="geel" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
+                <label for="geel" class="kleurFilter geel"></label>
+                <input id="oranje" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
+                <label for="oranje" class="kleurFilter oranje"></label>
+                <input id="blauw" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
+                <label for="blauw" class="kleurFilter blauw"></label>
+                <input id="paars" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
+                <label for="paars" class="kleurFilter paars"></label>
+                <input id="groen" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
+                <label for="groen" class="kleurFilter groen"></label>
+                <input id="grijs" name="checkbox" class="kleurCheckbox kleurFilter" type="checkbox">
+                <label for="grijs" class="kleurFilter grijs"></label>
+            </fieldset>
+        </form>
+    </aside>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

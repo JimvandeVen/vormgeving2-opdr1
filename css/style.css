@@ -58,6 +58,20 @@ header {
     align-items: center;
     justify-content: space-around;
     box-shadow: inset 0 -0.025rem 0 #e6e6e6;
+    margin-bottom: 0;
+}
+
+.yellow-section {
+    margin-top: 0;
+    display: block;
+    width: 100%;
+    height: 27em;
+    background-color: #ffc917;
+    margin-bottom: -20em;
+}
+
+main {
+    padding-top: 0;
 }
 
 #inlogKnop {
@@ -75,7 +89,6 @@ header {
     overflow-y: hidden;
     transition: 0.5s;
     box-shadow: 4px 4px 5px #aaaaaa;
-
 }
 
 .aanmelden form {
@@ -89,7 +102,6 @@ header {
 
 #passwordVerify {
     margin-right: 84%;
-
 }
 
 header img {
@@ -98,7 +110,6 @@ header img {
 
 dd {
     text-decoration: none;
-
 }
 
 dl {
@@ -121,8 +132,6 @@ article dl {
     top: 0.4em;
     left: 18em;
 }
-
-
 
 .leestijd {
     top: 3em;
@@ -161,7 +170,7 @@ article dl {
 }
 
 .zoeken input[type='text'] {
-    width: 45%;
+    width: 20%;
     padding-left: 1em;
 }
 
@@ -170,7 +179,6 @@ article dl {
     justify-content: flex-end;
     margin-bottom: 1em;
     height: 2rem;
-    margin-top: 0.3em;
 }
 
 .zoeken input[type='submit'] {
@@ -283,7 +291,6 @@ fieldset {
 
 .kleurenFilters input {
     display: none;
-
 }
 
 .kleurenFilters label {
@@ -335,52 +342,52 @@ label.oranje {
     background-color: pink;
 }
 
-#zwart:checked ~ .zwart {
+#zwart:checked~.zwart {
     border: solid;
     border-color: #0079d3;
 }
 
-#wit:checked ~ .wit {
+#wit:checked~.wit {
     border: solid;
     border-color: #0079d3;
 }
 
-#rood:checked ~ .rood {
+#rood:checked~.rood {
     border: solid;
     border-color: #0079d3;
 }
 
-#geel:checked ~ .geel {
+#geel:checked~.geel {
     border: solid;
     border-color: #0079d3;
 }
 
-#oranje:checked ~ .oranje {
+#oranje:checked~.oranje {
     border: solid;
     border-color: #0079d3;
 }
 
-#blauw:checked ~ .blauw {
+#blauw:checked~.blauw {
     border: solid;
     border-color: #0079d3;
 }
 
-#paars:checked ~ .paars {
+#paars:checked~.paars {
     border: solid;
     border-color: #0079d3;
 }
 
-#groen:checked ~ .groen {
+#groen:checked~.groen {
     border: solid;
     border-color: #0079d3;
 }
 
-#grijs:checked ~ .grijs {
+#grijs:checked~.grijs {
     border: solid;
     border-color: #0079d3;
 }
 
-#roze:checked ~ .roze {
+#roze:checked~.roze {
     border: solid;
     border-color: #0079d3;
 }
@@ -468,7 +475,6 @@ button {
 
 .verhalenSection {
     margin-bottom: 1em;
-
 }
 
 .alleVerhalenSection ul {
@@ -726,20 +732,19 @@ form input[type="password"]:invalid {
     justify-content: space-around;
 }
 
-.tabInloggen:checked ~ .inloggen {
+.tabInloggen:checked~.inloggen {
     display: block;
 }
 
-.tabInloggen:checked ~ .aanmelden {
-    display: none;
-
-}
-
-.tabAanmelden:checked ~ .inloggen {
+.tabInloggen:checked~.aanmelden {
     display: none;
 }
 
-.tabAanmelden:checked ~ .aanmelden {
+.tabAanmelden:checked~.inloggen {
+    display: none;
+}
+
+.tabAanmelden:checked~.aanmelden {
     display: block;
 }
 
@@ -751,7 +756,6 @@ a:visited {
     text-decoration: none;
     text-emphasis: none;
 }
-
 
 
 /*GEFRUSTREERD*/
@@ -818,7 +822,6 @@ a:visited {
     background-color: #FFD81B;
 }
 
-
 .even {
     background-color: #000000;
     color: #FFD81B;
@@ -837,9 +840,7 @@ a:visited {
     background-image: url(images/verward_background.png);
     background-size: contain;
     background-position: top;
-
 }
-
 
 .verwardeMan .titel {
     max-height: 4em;
@@ -862,6 +863,7 @@ a:visited {
     text-align: center;
     border-radius: 1em;
 }
+
 
 /*VERHALEND*/
 
@@ -900,7 +902,6 @@ a:visited {
     border-radius: 1.5em;
     background-color: #E7D0D5;
     box-shadow: inset 0 -0.125rem 0 #C5B4AF;
-
 }
 
 .verhalend .hoofdstuk2 {
@@ -958,28 +959,19 @@ a:visited {
     box-shadow: inset 0 -3.125rem 0 #C5B4AF;
 }
 
-
-/*
 .typewriter {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-
-border-right: .15em solid orange;
-/* The typwriter cursor */
-
-white-space: nowrap;
-/* Keeps the content on a single line */
-
-margin: 0 auto;
-/* Gives that scrolling effect as the typing happens */
-
-animation: typing 3.5s steps(40,
-end),
-blink-caret .75s step-end infinite;
-margin: 0;
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    margin: 0;
 }
 
-*/ .verhalend {}
 
 /* The typing effect */
 
@@ -991,6 +983,7 @@ margin: 0;
         width: 100%
     }
 }
+
 
 /* The typewriter cursor effect */
 
@@ -1005,81 +998,64 @@ margin: 0;
 }
 
 @media (min-width: 36em) {
-
     .verward {
         margin-bottom: 2em;
     }
 }
 
-
 @media (min-width: 47em) {
-
     header img {
         width: 5em;
     }
-
     .zoeken input[type='submit'] {
         width: 10%;
     }
     #inlogKnop {
         width: 3em;
     }
-
     h1 {
         font-size: 2rem;
     }
-
     h2 {
         font-size: 3em;
     }
-
     .zoeken {
         margin-bottom: 1em;
         height: 3rem;
     }
-
     section img,
     section article {
         width: 25rem;
         margin-right: 1em;
     }
-
     h3 {
         width: 25rem;
         font-size: 1.5em;
     }
-
     .comment {
         width: 3em;
         left: 18.5em;
     }
-
     .leeslijst {
         width: 2em;
         left: 22em;
     }
-
     .hartje {
         width: 3em;
     }
-
     .hartje:hover {
         cursor: pointer;
-
     }
-
     .aantalLikes {
         max-width: 3em;
         padding-top: 0.7em;
         padding-left: 1em;
     }
-
     button {
         height: 3em;
         min-width: 10em;
         font-size: 1.5rem;
     }
-
     #filterButton {
         height: 3em;
         min-width: 10em;
@@ -1088,18 +1064,15 @@ margin: 0;
         transform: translateX(-50%);
         left: 50%;
     }
-
     .formButton {
         display: block;
     }
     .inlogPlek {
         height: 50%;
     }
-
     .hidden {
         height: 0%;
     }
-
     .hiddenDisplay {
         display: none;
     }
@@ -1113,39 +1086,31 @@ margin: 0;
     .sorteren label {
         width: 95%;
     }
-
     #sorteerLampje {
         margin-top: 1em;
         width: .5em;
         height: .5em;
     }
-
     .sorteerLampje {
         margin-top: 1.5em;
         width: 2em;
         height: 2em;
     }
-
     .sluitSorteren {
         top: 6em;
     }
-
     .alleVerhalenSection ul {
         display: inline-block;
         margin-left: 0;
         margin-right: 0;
-
     }
-
     .alleVerhalenSection li {
         display: inline-block;
         margin-top: 2em;
     }
-
     .alleVerhalenSection article {
         margin-left: 10em;
     }
-
     #taalgebruikIcoon {
         max-width: 6em;
         height: 4em;
@@ -1153,7 +1118,6 @@ margin: 0;
         transform: translateX(-50%);
         left: 15%;
     }
-
     #leestijdIcoon {
         max-width: 4.5em;
         height: 4.5em;
@@ -1161,7 +1125,6 @@ margin: 0;
         transform: translateX(-50%);
         left: 27%;
     }
-
     #sfeerIcoon {
         max-width: 2em;
         height: 4.5em;
@@ -1169,7 +1132,6 @@ margin: 0;
         transform: translateX(50%);
         right: 15%;
     }
-
     #kleurIcoon {
         max-width: 5em;
         height: 4em;
@@ -1177,23 +1139,19 @@ margin: 0;
         transform: translateX(50%);
         right: 27%;
     }
-
     /*GEFRUSTREERD*/
     .indent {
         width: 25em;
         float: left;
         shape-outside: url(images/indent1.png);
     }
-
     p {
         font-size: 1.5em;
     }
-
     .titel {
         max-height: 15em;
         margin-bottom: 3em;
     }
-
     /*VERWARDEMAN*/
     .verwardeMan .titel {
         max-height: 10em;
@@ -1203,64 +1161,53 @@ margin: 0;
 }
 
 @media (min-width: 63em) {
-
     .inlogPlek {
         height: 65%;
     }
     .hidden {
         height: 0%;
     }
-
     .hiddenDisplay {
         display: none;
     }
-
     .alleVerhalenSection article {
         margin-left: 1em;
     }
-
     .tabs {
         justify-content: flex-start;
     }
     .tabsAanmelden {
         margin-left: 1em;
     }
-
     #taalgebruikIcoon {
         max-width: 6em;
         bottom: 1em;
         left: 13.5em;
     }
-
     #leestijdIcoon {
         max-width: 4.5em;
         bottom: 1em;
         left: 20.5em;
     }
-
     #sfeerIcoon {
         max-width: 1.5em;
         bottom: 1em;
         right: 13.5em;
     }
-
     #kleurIcoon {
         max-width: 5em;
         bottom: 1em;
         right: 20.5em;
     }
-
     .sorteerLampje {
         margin-right: 50%;
     }
-
     .sorteren label {
         width: 97%;
     }
     .scroll ul {
         display: inline-block;
     }
-
     .scroll li {
         display: inline-block;
     }
@@ -1268,21 +1215,16 @@ margin: 0;
         display: inline-block;
         margin-right: 50%;
     }
-
     .odd,
     .even {
         margin: 6em;
     }
-
     .odd {
         margin-left: 40%;
     }
-
-
     .even {
         margin-right: 40%;
     }
-
     @keyframes roll {
         0% {
             transform: rotate(0);
