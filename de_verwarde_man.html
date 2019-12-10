@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Verwarde Man</title>
+</head>
+
+<body class="verwardeMan">
+    <header>
+        <a href="index.html"><img src="images/Nederlandse-spoorwegen-NS-logo.png" alt="Logo Nederlandse Spoorwegen"></a>
+        <h1>NS Verhalen</h1>
+        <img id="inlogKnop" src="images/logo-MijnNS.png" alt="Logo Nederlandse Spoorwegen">
+    </header>
+    <main class="mainVerwardeMan">
+        <div class="titelFlex"><img class="titel" src="css/images/verward_titel.png" alt="Gefrustreerd"></div>
+        <div class="site-wrap">
+            <img src='images/alineaVerward.png' class="align-left slide-in alinea" alt="background">
+            <div class="verward verwardOdd">
+                <p class="pVerward"> De politie heeft dinsdag 2 februari een verwarde man aangehouden. Hij was op dat moment in een babywinkel op het Bos en Lommerplein bezig babyschoentjes te kopen. Een luttele drie uur daarvoor stapte de verwarde man op het stationsplein
+                    uit de bus. Hij duwde een kinderwagen voort waarin 99 blikjes Whiskas lagen. Hij liep het plein diagonaal over en leek zich niet aan de miezerregen, ook niet aan de striemende wind en al helemaal niet aan zijn voortploeterende medemens
+                    te storen. Diverse ooggetuigen bevestigen dat de verwarde man aan één stuk door een tekst schreeuwde die wij als volgt hebben weten te reconstrueren: ‘Moet naar Openbare Bibliotheek! Stijloefeningen van Queneau lenen!’ Bij het Oosterdokseiland
+                    lag er over de weg een plank met aan weerszijden diepe bouwputten. Vanuit de diepte klonken de geluiden van heipalen en drilboren, geluiden waarboven de verwarde man een langgerekt wolvengehuil liet horen.
+                </p>
+            </div>
+            <img src='images/alineaVerward.png' class="align-right slide-in alinea" alt="background">
+            <div class="verward verwardEven">
+                <p class="pVerward">Vlak voordat hij de bibliotheek wilde betreden, werd de verwarde man aangeklampt door een vrouw die hem in het Engels met een Frans accent vroeg of dit het postkantoor was. Op luide toon begon de verwarde man tegen de vrouw te schreeuwen
+                    dat ze naar de Raadhuisstraat moest. Volgens omstanders rende de vrouw daarop in wilde paniek weg richting een achteruit rijdende Renault.
+                </p>
+            </div>
+            <img src='images/alineaVerward.png' class="align-left slide-in alinea" alt="background">
+            <div class="verward verwardOdd">
+                <p class="pVerward">Boven, op de tweede verdieping, begon de verwarde man alle boeken van schrijvers met een Q uit de boekenkast op de grond te gooien. Hij bleek met name geïnteresseerd in de boeken van de Franse schrijver Raymond Queneau. Een aantal bibliotheekbezoekers
+                    besloot de security te waarschuwen, maar die zagen geen reden in te grijpen. Onder het braken van het woord ‘gollem’ begaf de verwarde man zich naar de dichtstbijzijnde computer en tikte ‘stijloefeningen, Raymond Queneau’ in het zoekveld
+                    van de zoekmachine. Volgens de resultaten van de zoekmachine lag Stijloefeningen van Raymond Queneau gewoon op de plank. De verwarde man liep daarop naar een argeloze medewerker die hij over de balie heen sleurde en op zeer intimideren
+                    toon opdroeg mee te helpen zoeken.</p>
+            </div>
+            <img src='images/alineaVerward.png' class="align-right slide-in alinea" alt="background">
+            <div class="verward verwardEven">
+                <p class="pVerward">Bij de Q aangekomen troffen de verwarde man en de medewerker een wirwar van op de grond geworpen boeken aan. Ook de medewerker kon niet voldoen aan de onbegrijpelijke eisen van de verwarde man en verkeerde, zo verklaarde hij later aan
+                    uw verslaggever, in doodsangst. Desondanks lukte het hem om de verwarde man te overtuigen een mail te sturen naar het magazijn, die zijn vraag wellicht wel konden beantwoorden. Zo hoopte hij enige tijdswinst te boeken, verklaarde de
+                    medewerker later. De verwarde man stuurde een mail. In de tijd die hij moest wachten is de verwarde man, krijsend als een gibbon-aap, van tafel naar tafel gesprongen. Toen hij vijftien minuten later zijn mail checkte en las dat Stijloefeningen
+                    op de plek lag waar het moest liggen, ontdeed hij zich van zijn kleren en verliet hij luid brullend het pand, slechts gekleed in een enkele sok.</p>
+            </div>
+            <img src='images/alineaVerward.png' class="align-left slide-in alinea" alt="background">
+        </div>
+        <section id="verwardComment" class="reacties">
+            <form>
+                <h2 class="loginH2">Voeg een reactie toe</h2>
+                <label for="naam">Naam</label>
+                <input required id="naam" type="text" class="formInput">
+                <label for="emailInlog">E-mail adres:</label>
+                <input required id="emailInlog" type="email" placeholder="abc@email.com" class="formInput">
+                <label for="bericht">Bericht</label>
+                <textarea id="bericht" cols="30" rows="10"></textarea>
+                <input type="submit" value="Plaats reactie" class="formButton" id="plaatsReactie">
+            </form>
+        </section>
+
+    </main>
+    <script>
+        function debounce(func, wait = 20, immediate = true) {
+            var timeout;
+            return function() {
+                var context = this,
+                    args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        };
+
+        const sliderImages = document.querySelectorAll('.slide-in');
+
+        function checkSlide() {
+            sliderImages.forEach(sliderImage => {
+                // half way through the image
+                const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+                // bottom of the image
+                const imageBottom = sliderImage.offsetTop + sliderImage.height;
+                const isHalfShown = slideInAt > sliderImage.offsetTop;
+                const isNotScrolledPast = window.scrollY < imageBottom;
+                if (isHalfShown && isNotScrolledPast) {
+                    sliderImage.classList.add('active');
+                } else {
+                    sliderImage.classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', debounce(checkSlide));
+    </script>
+
+    <style>
+        .verward {
+            position: relative;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .alinea {
+            width: 100%;
+        }
+        
+        .site-wrap {
+            max-width: 100%;
+            margin: 100px auto;
+            margin-top: 0;
+        }
+        
+        .align-left {
+            margin-right: 20px;
+        }
+        
+        .slide-in {
+            opacity: 0;
+            transition: all .5s;
+        }
+        
+        .align-left.slide-in {
+            transform: translateX(-60%) scale(0.95);
+        }
+        
+        .align-right.slide-in {
+            transform: translateX(60%) scale(0.95);
+        }
+        
+        .slide-in.active {
+            opacity: 1;
+            transform: translateX(0%) scale(1);
+        }
+    </style>
+</body>
+
+</html>
