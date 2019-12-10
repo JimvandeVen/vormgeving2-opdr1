@@ -62,9 +62,10 @@ header {
 }
 
 .yellow-section {
+    padding: 1em 2em 1em 2em;
     margin-top: 0;
     display: block;
-    width: 100%;
+    max-width: 100vw;
     height: 27em;
     background-color: #ffc917;
     margin-bottom: -20em;
@@ -172,6 +173,8 @@ article dl {
 .zoeken input[type='text'] {
     width: 20%;
     padding-left: 1em;
+    border-radius: 4px;
+    margin-right: 2em;
 }
 
 .zoeken {
@@ -191,6 +194,7 @@ article dl {
     text-decoration: none;
     transition: box-shadow .15s ease-in-out;
     width: 4em;
+    border-radius: 4px;
 }
 
 .zoeken input[type=submit]:hover {
@@ -215,7 +219,7 @@ h2 {
     display: block;
     font-weight: 400;
     position: relative;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     box-shadow: inset 0 -0.025rem 0 #e6e6e6;
     justify-content: space-around;
 }
@@ -442,7 +446,7 @@ aside button {
 
 section img,
 section article {
-    width: 20rem;
+    width: 100%;
     margin-right: 1em;
 }
 
@@ -474,19 +478,29 @@ button {
 }
 
 .verhalenSection {
-    margin-bottom: 1em;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
 }
 
-.alleVerhalenSection ul {
+.verhalenSection ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin-left: 1.1em;
     margin-right: 1.1em;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.verhalenSection ul li {
+    display: inline-block;
+}
+
+.verhalenSection ul li:first-child {
+    width: 100%;
+}
+
+.verhalenSection ul li:not(:first-child) {
+    flex: 1;
 }
 
 article {
@@ -600,7 +614,7 @@ button:hover {
 }
 
 .scroll ul {
-    display: flex;
+    /* display: flex;
     flex-wrap: nowrap;
     overflow: auto;
     -moz-webkit-overflow-scrolling: touch;
@@ -609,11 +623,13 @@ button:hover {
     -moz-webkit-margin-start: 0;
     -moz-webkit-margin-end: 0;
     -moz-webkit-padding-start: 0;
-    overflow-style: -ms-autohiding-scrollbar;
+    overflow-style: -ms-autohiding-scrollbar; */
 }
 
 section {
-    background-color: white;
+    max-width: 100vw;
+    padding: 1em 2em 1em 2em;
+    /* background-color: white; */
     box-shadow: inset 0 -0.025rem 0 #e6e6e6;
     box-shadow: 4px 4px 5px #aaaaaa;
 }
@@ -1025,7 +1041,7 @@ a:visited {
     }
     section img,
     section article {
-        width: 25rem;
+        width: 100%;
         margin-right: 1em;
     }
     h3 {
@@ -1205,12 +1221,12 @@ a:visited {
     .sorteren label {
         width: 97%;
     }
-    .scroll ul {
+    /* .scroll ul {
         display: inline-block;
     }
     .scroll li {
         display: inline-block;
-    }
+    } */
     fieldset {
         display: inline-block;
         margin-right: 50%;
