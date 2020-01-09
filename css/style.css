@@ -187,7 +187,7 @@ article dl {
 .zoeken input[type='submit'] {
     vertical-align: top;
     white-space: nowrap;
-    background-color: #0079d3;
+    background-color: #0063d3;
     color: #fff;
     box-shadow: inset 0 -0.125rem 0 #005ca0;
     border: none;
@@ -226,7 +226,7 @@ h2 {
 
 h3 {
     height: 2em;
-    background-color: #0079d3;
+    background-color: #0063d3;
     text-align: center;
     color: white;
     margin: 0;
@@ -282,7 +282,7 @@ fieldset {
 
 fieldset .titelFilter {
     display: block;
-    border-bottom: solid #0079d3;
+    border-bottom: solid #0063d3;
     width: 20em;
     padding-bottom: 0.5em;
     height: 1.7em;
@@ -302,7 +302,7 @@ fieldset {
 
 #kleurenFilters {
     border: none;
-    border-bottom: solid #0079d3;
+    border-bottom: solid #0063d3;
 }
 
 .zwart {
@@ -347,52 +347,52 @@ label.oranje {
 
 #zwart:checked~.zwart {
     border: solid;
-    border-color: #0079d3;
+    border-color: #0063d3;
 }
 
 #wit:checked~.wit {
     border: solid;
-    border-color: #0079d3;
+    border-color: #0063d3;
 }
 
 #rood:checked~.rood {
     border: solid;
-    border-color: #0079d3;
+    border-color: #0063d3;
 }
 
 #geel:checked~.geel {
     border: solid;
-    border-color: #0079d3;
+    border-color: #0063d3;
 }
 
 #oranje:checked~.oranje {
     border: solid;
-    border-color: #0079d3;
+    border-color: #0063d3;
 }
 
 #blauw:checked~.blauw {
     border: solid;
-    border-color: #0079d3;
+    border-color: #0063d3;
 }
 
 #paars:checked~.paars {
     border: solid;
-    border-color: #0079d3;
+    border-color: #0063d3;
 }
 
 #groen:checked~.groen {
     border: solid;
-    border-color: #0079d3;
+    border-color: #0063d3;
 }
 
 #grijs:checked~.grijs {
     border: solid;
-    border-color: #0079d3;
+    border-color: #0063d3;
 }
 
 #roze:checked~.roze {
     border: solid;
-    border-color: #0079d3;
+    border-color: #0063d3;
 }
 
 aside button {
@@ -411,7 +411,7 @@ aside button {
     top: 1.8em;
     border-radius: 1em;
     color: white;
-    background-color: #0079d3;
+    background-color: #0063d3;
     box-shadow: inset 0 -0.125rem 0 #005ca0;
 }
 
@@ -460,7 +460,7 @@ button {
     vertical-align: top;
     font-weight: 400;
     white-space: nowrap;
-    background-color: #0079d3;
+    background-color: #0063d3;
     color: #fff;
     box-shadow: inset 0 -0.125rem 0 #005ca0;
     text-align: center;
@@ -501,6 +501,45 @@ ul li img {
     height: 100%;
 }
 
+.heroflow__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.heroflow__overlay--solidBlue:before {
+    background-color: #003082;
+    opacity: .2;
+}
+
+.heroflow__overlay:before {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    content: "";
+}
+
+.heroflow__overlay--solidBlue .heroflow__overlay-svg {
+    color: #003082;
+}
+
+.heroflow__overlay--solidBlue {
+    -webkit-animation: fade-in 1.5s cubic-bezier(.7, .27, .27, 1) .15s both;
+    animation: fade-in 1.5s cubic-bezier(.7, .27, .27, 1) .15s both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 article {
     margin-bottom: 1em;
     margin-right: 10em;
@@ -530,7 +569,7 @@ article {
     top: 2.7em;
     border-radius: 1em;
     color: white;
-    background-color: #0079d3;
+    background-color: #0063d3;
     box-shadow: inset 0 -0.125rem 0 #005ca0;
 }
 
@@ -582,7 +621,7 @@ article {
     min-width: 7.5rem;
     font-weight: 400;
     white-space: nowrap;
-    background-color: #0079d3;
+    background-color: #0063d3;
     color: #fff;
     box-shadow: inset 0 -0.125rem 0 #005ca0;
     text-align: center;
@@ -669,7 +708,7 @@ form label {
     border-radius: 0;
     position: relative;
     background-color: transparent;
-    border-color: #0079d3;
+    border-color: #0063d3;
     border-style: solid;
     width: 20em;
     color: #003082;
