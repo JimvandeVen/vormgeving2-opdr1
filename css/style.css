@@ -224,14 +224,15 @@ h2 {
     justify-content: space-around;
 }
 
-h3 {
+.cardTitle {
     z-index: 10;
     position: absolute;
     left: 0;
     top: 0;
     widows: 40%;
-    color: white;
+    color: #003082;
     margin-left: 1em;
+    font-weight: 400;
 }
 
 .heroTitle {
@@ -1236,6 +1237,10 @@ a:visited {
 }
 
 @media (min-width: 63em) {
+    main {
+        padding-left: 20em;
+        padding-right: 20em;
+    }
     .inlogPlek {
         height: 65%;
     }
