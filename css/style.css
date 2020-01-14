@@ -171,6 +171,7 @@ article dl {
 }
 
 .zoeken input[type='text'] {
+    line-height: 1.5625rem;
     width: 30%;
     padding-left: 1em;
     border-radius: 4px;
@@ -196,6 +197,7 @@ article dl {
     transition: box-shadow .15s ease-in-out;
     width: 4em;
     border-radius: 4px;
+    min-width: 7.5rem;
 }
 
 .zoeken input[type=submit]:hover {
@@ -242,7 +244,6 @@ h2 {
     position: absolute;
     left: 0;
     top: 0;
-    widows: 40%;
     color: white;
     margin-left: 1em;
     font-size: 2.375rem;
@@ -575,8 +576,8 @@ ul li img {
 }
 
 .heroflow__overlay--solidBlue {
-    animation: fade-in 1.5s cubic-bezier(.7, .27, .27, 1) .15s both;
-    animation-delay: 1.2s;
+    animation: fade-in 1s cubic-bezier(.7, .27, .27, 1) .15s both;
+    animation-delay: 1.3s;
 }
 
 @keyframes fade-in {
@@ -1082,13 +1083,35 @@ a:visited {
     }
 }
 
-@media (min-width: 36em) {
+@media (min-width: 300px) {
     .verward {
         margin-bottom: 2em;
     }
+    .yellow-section {
+        height: 10em;
+        margin-bottom: -8em;
+    }
+    .zoeken input[type='submit'] {
+        min-width: 5em;
+    }
+    input[type="text"] {
+        min-width: 11.5em;
+    }
+    .verhalenSection ul {
+        padding: 0;
+    }
+    .verhalenSection ul li:not(:first-child) {
+        width: 100%;
+    }
+    .cardTitle {
+        font-size: .8em;
+    }
+    .heroTitle {
+        font-size: 1.5rem;
+    }
 }
 
-@media (min-width: 47em) {
+@media (min-width: 767px) {
     header img {
         width: 5em;
     }
@@ -1245,10 +1268,10 @@ a:visited {
     }
 }
 
-@media (min-width: 63em) {
-    main {
-        padding-left: 20em;
-        padding-right: 20em;
+@media (min-width: 1440px) {
+    .verhalenSection {
+        margin-left: 15em;
+        margin-right: 15em;
     }
     .inlogPlek {
         height: 65%;
