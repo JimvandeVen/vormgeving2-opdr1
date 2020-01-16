@@ -1130,16 +1130,16 @@ a:visited {
 
 @media (min-width: 767px) {
     header img {
-        width: 5em;
+        width: 3em;
     }
     .zoeken input[type='submit'] {
         width: 15%;
     }
     #inlogKnop {
-        width: 3em;
+        width: 2em;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 1.5em;
     }
     h2 {
         font-size: 3em;
@@ -1313,11 +1313,11 @@ a:visited {
         font-size: 4em;
     }
     .yellow-section {
-        padding-right: 17em;
+        padding-right: 22em;
     }
     .verhalenSection {
-        margin-left: 15em;
-        margin-right: 15em;
+        margin-left: 20em;
+        margin-right: 20em;
     }
     .inlogPlek {
         height: 65%;
